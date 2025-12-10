@@ -34,6 +34,14 @@ jobs:
       - name: Run unit tests
         run: npm run test
 
+      - name: Setup test database
+        run: |
+          mkdir -p data
+          npx prisma db push
+          npm run db:seed
+        env:
+          DATABASE_URL: file:./data/test.db
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
