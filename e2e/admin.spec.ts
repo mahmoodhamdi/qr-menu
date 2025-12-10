@@ -58,8 +58,9 @@ test.describe("Admin Items", () => {
 
     // Check dialog is open
     await expect(page.getByRole("dialog")).toBeVisible();
-    await expect(page.getByLabel(/item name/i)).toBeVisible();
-    await expect(page.getByLabel(/price/i)).toBeVisible();
+    // Check for the exact Item Name field (not Arabic)
+    await expect(page.getByRole("textbox", { name: "Item Name", exact: true })).toBeVisible();
+    await expect(page.getByLabel("Price")).toBeVisible();
   });
 });
 
