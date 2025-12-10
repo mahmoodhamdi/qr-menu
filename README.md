@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QR Menu - Digital Restaurant Menu
 
-## Getting Started
+Scan QR. View Menu. See Prices (Live!)
 
-First, run the development server:
+## Features
+
+- Mobile-first digital menu
+- Items with images
+- Real-time price updates
+- Search & categories
+- QR code generator
+- Arabic & English with RTL support
+- Dark/Light mode
+
+## Quick Start
+
+### Using Docker
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker run -p 3000:3000 mwmsoftware/qr-menu
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Local Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Clone the repository
+git clone https://github.com/mahmoodhamdi/QR-Menu.git
+cd QR-Menu
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Install dependencies
+npm install
 
-## Learn More
+# Setup database
+npx prisma db push
+npm run db:seed
 
-To learn more about Next.js, take a look at the following resources:
+# Start development server
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Database**: Prisma + SQLite
+- **i18n**: next-intl (English/Arabic)
+- **Testing**: Vitest + Playwright
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/
+│   ├── [locale]/           # i18n routes
+│   │   ├── page.tsx        # Landing page
+│   │   ├── menu/[slug]/    # Public menu
+│   │   └── admin/          # Admin dashboard
+│   └── api/                # API routes
+├── components/
+│   ├── menu/               # Menu components
+│   ├── admin/              # Admin components
+│   └── ui/                 # shadcn components
+├── lib/                    # Utilities
+└── messages/               # i18n translations
+```
+
+## Routes
+
+| Route | Description |
+|-------|-------------|
+| `/` | Landing page |
+| `/menu/[slug]` | Public menu (customers scan QR) |
+| `/admin` | Admin dashboard |
+| `/admin/items` | Manage menu items |
+| `/admin/categories` | Manage categories |
+| `/admin/qr` | Generate & download QR |
+
+## API Endpoints
+
+```
+GET    /api/health              # Health check
+GET    /api/restaurants         # List restaurants
+GET    /api/restaurants/[slug]  # Get restaurant + menu
+POST   /api/categories          # Add category
+PATCH  /api/categories/[id]     # Update category
+DELETE /api/categories/[id]     # Delete category
+POST   /api/items               # Add item
+PATCH  /api/items/[id]          # Update item
+DELETE /api/items/[id]          # Delete item
+POST   /api/upload              # Upload image
+```
+
+## Scripts
+
+```bash
+npm run dev        # Development server
+npm run build      # Production build
+npm run start      # Start production server
+npm run test       # Run unit tests
+npm run test:e2e   # Run E2E tests
+npm run lint       # Linting
+npm run db:push    # Push database schema
+npm run db:seed    # Seed database
+npm run db:studio  # Open Prisma Studio
+```
+
+## Environment Variables
+
+Create a `.env` file:
+
+```env
+DATABASE_URL=file:./data/menu.db
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+UPLOAD_DIR=./uploads
+```
+
+## Docker
+
+```bash
+# Build image
+docker build -t qr-menu .
+
+# Run container
+docker run -p 3000:3000 -v qr-data:/app/data qr-menu
+```
+
+## Contact
+
+- Email: mwm.softwars.solutions@gmail.com
+- Email: hmdy7486@gmail.com
+- Phone: +201019793768
+
+## License
+
+MIT License - see [LICENSE](LICENSE)

@@ -1,0 +1,116 @@
+{
+  "common": {
+    "appName": "QR Menu",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "noResults": "No results found",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "landing": {
+    "title": "Digital Menu for Your Restaurant",
+    "subtitle": "Create QR code menus in minutes. Customers scan, browse, and order.",
+    "getStarted": "Get Started",
+    "viewDemo": "View Demo",
+    "features": {
+      "title": "Features",
+      "qrCode": "QR Code Generation",
+      "qrCodeDesc": "Generate unique QR codes for your restaurant menu",
+      "realTime": "Real-time Updates",
+      "realTimeDesc": "Update prices and items instantly",
+      "multilingual": "Multilingual Support",
+      "multilingualDesc": "Support for English and Arabic with RTL"
+    }
+  },
+  "menu": {
+    "title": "Menu",
+    "search": "Search menu...",
+    "noItems": "No items in this category",
+    "available": "Available",
+    "unavailable": "Unavailable",
+    "allCategories": "All",
+    "viewDetails": "View Details"
+  },
+  "categories": {
+    "appetizers": "Appetizers",
+    "main": "Main Dishes",
+    "drinks": "Drinks",
+    "desserts": "Desserts",
+    "other": "Other"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "menu": "Menu",
+    "items": "Items",
+    "categories": "Categories",
+    "qrCode": "QR Code",
+    "settings": "Settings",
+    "totalItems": "Total Items",
+    "totalCategories": "Total Categories",
+    "activeItems": "Active Items",
+    "recentUpdates": "Recent Updates"
+  },
+  "items": {
+    "addItem": "Add Item",
+    "editItem": "Edit Item",
+    "deleteItem": "Delete Item",
+    "itemName": "Item Name",
+    "itemNameAr": "Item Name (Arabic)",
+    "price": "Price",
+    "description": "Description",
+    "descriptionAr": "Description (Arabic)",
+    "image": "Image",
+    "uploadImage": "Upload Image",
+    "removeImage": "Remove Image",
+    "category": "Category",
+    "isAvailable": "Available",
+    "order": "Display Order",
+    "deleteConfirm": "Are you sure you want to delete this item?",
+    "addSuccess": "Item added successfully",
+    "updateSuccess": "Item updated successfully",
+    "deleteSuccess": "Item deleted successfully"
+  },
+  "categoryForm": {
+    "addCategory": "Add Category",
+    "editCategory": "Edit Category",
+    "deleteCategory": "Delete Category",
+    "categoryName": "Category Name",
+    "categoryNameAr": "Category Name (Arabic)",
+    "isActive": "Active",
+    "deleteConfirm": "Are you sure you want to delete this category? All items in this category will also be deleted.",
+    "addSuccess": "Category added successfully",
+    "updateSuccess": "Category updated successfully",
+    "deleteSuccess": "Category deleted successfully"
+  },
+  "qr": {
+    "title": "QR Code Generator",
+    "generate": "Generate QR",
+    "download": "Download QR",
+    "downloadPNG": "Download PNG",
+    "preview": "Preview",
+    "menuUrl": "Menu URL",
+    "copyUrl": "Copy URL",
+    "copied": "URL copied to clipboard",
+    "printReady": "Print-ready QR code"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "en": "English",
+    "ar": "Arabic"
+  }
+}

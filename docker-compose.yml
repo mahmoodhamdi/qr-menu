@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  qr-menu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=file:/app/data/menu.db
+      - NEXT_PUBLIC_APP_URL=http://localhost:3000
+    volumes:
+      - qr-menu-data:/app/data
+      - qr-menu-uploads:/app/uploads
+    restart: unless-stopped
+
+volumes:
+  qr-menu-data:
+  qr-menu-uploads:

@@ -1,0 +1,116 @@
+{
+  "common": {
+    "appName": "قائمة QR",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "search": "بحث",
+    "noResults": "لا توجد نتائج",
+    "back": "رجوع",
+    "next": "التالي",
+    "submit": "إرسال",
+    "close": "إغلاق",
+    "confirm": "تأكيد",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "landing": {
+    "title": "قائمة رقمية لمطعمك",
+    "subtitle": "أنشئ قوائم QR في دقائق. يمسح العملاء ويتصفحون ويطلبون.",
+    "getStarted": "ابدأ الآن",
+    "viewDemo": "عرض تجريبي",
+    "features": {
+      "title": "المميزات",
+      "qrCode": "إنشاء رمز QR",
+      "qrCodeDesc": "أنشئ رموز QR فريدة لقائمة مطعمك",
+      "realTime": "تحديثات فورية",
+      "realTimeDesc": "حدث الأسعار والعناصر فوراً",
+      "multilingual": "دعم متعدد اللغات",
+      "multilingualDesc": "دعم العربية والإنجليزية مع RTL"
+    }
+  },
+  "menu": {
+    "title": "القائمة",
+    "search": "ابحث في القائمة...",
+    "noItems": "لا توجد عناصر في هذه الفئة",
+    "available": "متوفر",
+    "unavailable": "غير متوفر",
+    "allCategories": "الكل",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "categories": {
+    "appetizers": "المقبلات",
+    "main": "الأطباق الرئيسية",
+    "drinks": "المشروبات",
+    "desserts": "الحلويات",
+    "other": "أخرى"
+  },
+  "admin": {
+    "dashboard": "لوحة التحكم",
+    "menu": "القائمة",
+    "items": "العناصر",
+    "categories": "الفئات",
+    "qrCode": "رمز QR",
+    "settings": "الإعدادات",
+    "totalItems": "إجمالي العناصر",
+    "totalCategories": "إجمالي الفئات",
+    "activeItems": "العناصر النشطة",
+    "recentUpdates": "التحديثات الأخيرة"
+  },
+  "items": {
+    "addItem": "إضافة عنصر",
+    "editItem": "تعديل العنصر",
+    "deleteItem": "حذف العنصر",
+    "itemName": "اسم العنصر",
+    "itemNameAr": "اسم العنصر (عربي)",
+    "price": "السعر",
+    "description": "الوصف",
+    "descriptionAr": "الوصف (عربي)",
+    "image": "الصورة",
+    "uploadImage": "رفع صورة",
+    "removeImage": "إزالة الصورة",
+    "category": "الفئة",
+    "isAvailable": "متوفر",
+    "order": "ترتيب العرض",
+    "deleteConfirm": "هل أنت متأكد من حذف هذا العنصر؟",
+    "addSuccess": "تمت إضافة العنصر بنجاح",
+    "updateSuccess": "تم تحديث العنصر بنجاح",
+    "deleteSuccess": "تم حذف العنصر بنجاح"
+  },
+  "categoryForm": {
+    "addCategory": "إضافة فئة",
+    "editCategory": "تعديل الفئة",
+    "deleteCategory": "حذف الفئة",
+    "categoryName": "اسم الفئة",
+    "categoryNameAr": "اسم الفئة (عربي)",
+    "isActive": "نشط",
+    "deleteConfirm": "هل أنت متأكد من حذف هذه الفئة؟ سيتم حذف جميع العناصر في هذه الفئة أيضاً.",
+    "addSuccess": "تمت إضافة الفئة بنجاح",
+    "updateSuccess": "تم تحديث الفئة بنجاح",
+    "deleteSuccess": "تم حذف الفئة بنجاح"
+  },
+  "qr": {
+    "title": "مولد رمز QR",
+    "generate": "إنشاء QR",
+    "download": "تحميل QR",
+    "downloadPNG": "تحميل PNG",
+    "preview": "معاينة",
+    "menuUrl": "رابط القائمة",
+    "copyUrl": "نسخ الرابط",
+    "copied": "تم نسخ الرابط",
+    "printReady": "رمز QR جاهز للطباعة"
+  },
+  "theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام"
+  },
+  "language": {
+    "en": "الإنجليزية",
+    "ar": "العربية"
+  }
+}
