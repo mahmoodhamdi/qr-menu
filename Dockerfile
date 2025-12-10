@@ -16,7 +16,13 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV DATABASE_URL=file:./data/build.db
+
+# Create data directory and generate prisma
+RUN mkdir -p data
 RUN npx prisma generate
+RUN npx prisma db push
+
 RUN npm run build
 
 # Production image, copy all the files and run next
