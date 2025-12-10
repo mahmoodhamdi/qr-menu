@@ -12,6 +12,38 @@ Scan QR. View Menu. See Prices (Live!)
 - Arabic & English with RTL support
 - Dark/Light mode
 
+## Screenshots
+
+### Landing Page
+![Landing Page](screenshots/01-landing-page.png)
+
+### Menu Page
+![Menu Page](screenshots/02-menu-page.png)
+
+### Dark Mode
+![Dark Mode](screenshots/03-menu-dark-mode.png)
+
+### Arabic (RTL)
+![Arabic Menu](screenshots/04-menu-arabic.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/05-admin-dashboard.png)
+
+### Admin - Manage Items
+![Admin Items](screenshots/06-admin-items.png)
+
+### Admin - Add Item Dialog
+![Add Item Dialog](screenshots/07-admin-add-item.png)
+
+### Admin - Categories
+![Admin Categories](screenshots/08-admin-categories.png)
+
+### Admin - QR Code Generator
+![QR Generator](screenshots/09-admin-qr.png)
+
+### Mobile View
+![Mobile Menu](screenshots/10-mobile-menu.png)
+
 ## Quick Start
 
 ### Using Docker
